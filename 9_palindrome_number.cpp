@@ -12,14 +12,14 @@ std::vector;
 // and then every complementary indexes of the array are checked.
 bool is_palindrome_1(int x) {
     
-    if(x < 0)
+    if(x < 0) {
         return false;
+    }
 
     vector<int> digits;
-
     int temp = x;
 
-    while (x > 0) {
+    while(x > 0) {
         temp = x % 10;
         digits.push_back(temp);
         x /= 10;
