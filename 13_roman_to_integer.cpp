@@ -1,13 +1,11 @@
 #include <iostream>
 #include <string>
-#include <vector>
 
 
 using 
 std::cout,
 std::cin,
-std::string,
-std::vector;
+std::string;
 
 
 int roman_to_int(string s) {
