@@ -11,13 +11,10 @@ std::string;
 int roman_to_int(string s) {
     
     int number = 0;
-    char c = s[0];
     
     for(int i=0; i<s.length(); ++i) {
         
-        c = s[i];
-        
-        switch(c) {
+        switch(s[i]) {
             
             case 'I': {
                 if(s[i+1] == 'V') { number += 4; i++; }
