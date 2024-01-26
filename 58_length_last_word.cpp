@@ -4,7 +4,6 @@
 
 using 
 std::cout,
-std::cin,
 std::string;
 
 
@@ -47,6 +46,7 @@ int main(void) {
 
     index = length_last_word("    hello    ");
     cout << index << "\n";
+    
     
     return 0;
 }

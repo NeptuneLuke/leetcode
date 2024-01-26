@@ -4,7 +4,6 @@
 
 using 
 std::cout,
-std::cin,
 std::vector;
 
 
@@ -74,13 +73,14 @@ int remove_element_3(vector<int>& nums, int val) {
 int main(void) {
 
     vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
-    int remaining_nums = remove_element_3(nums,1);
 
+    int remaining_nums = remove_element_3(nums,1);
     for(auto & elem : nums) {
         cout << elem << " ";
     }
     cout << "\n";
     cout << remaining_nums;
+
 
     return 0;
 }

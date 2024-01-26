@@ -5,7 +5,6 @@
 
 using 
 std::cout,
-std::cin,
 std::vector;
 
 
@@ -143,7 +142,6 @@ int main(void) {
     vector<int> nums = {3,2,4}; 
     int target = 6;
     
-
     cout << "1 METHOD \n";
     vector<int> result = two_sum_1(nums,target);
     for(const auto &elem : result) {
@@ -166,6 +164,7 @@ int main(void) {
         cout << elem << "\n";
     }
     cout << "------------------------------- \n";
+
 
     return 0;
 }

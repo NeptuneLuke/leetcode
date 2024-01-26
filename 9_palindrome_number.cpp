@@ -4,7 +4,6 @@
 
 using 
 std::cout,
-std::cin,
 std::vector;
 
 
@@ -64,6 +63,7 @@ int main(void) {
 
     b = is_palindrome_2(121);
     cout << std::boolalpha << b << "\n";
+
 
     return 0;
 }

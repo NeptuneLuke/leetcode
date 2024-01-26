@@ -4,7 +4,6 @@
 
 using 
 std::cout,
-std::cin,
 std::string;
 
 
@@ -67,7 +66,6 @@ int index_first_substring_3(string haystack, string needle) {
 
 int main(void) {
 
-
     int index = index_first_substring_1("sodsosad","sad");
     cout << index << "\n";
 
@@ -76,5 +74,7 @@ int main(void) {
 
     index = index_first_substring_3("sodsosad","sad");
     cout << index << "\n";
+
+
     return 0;
 }

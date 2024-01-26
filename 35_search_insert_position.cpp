@@ -4,7 +4,6 @@
 
 using 
 std::cout,
-std::cin,
 std::vector;
 
 
@@ -73,11 +72,13 @@ int search_insert_2(vector<int>& nums, int target) {
 int main(void) {
 
     vector<int> nums = {1,3,4,6};
+    
     int pos = search_insert_1(nums, 5);
     cout << pos << "\n";
 
     pos = search_insert_2(nums, 5);
     cout << pos << "\n";
+
 
     return 0;
 }

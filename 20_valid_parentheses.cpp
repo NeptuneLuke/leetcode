@@ -5,7 +5,6 @@
 
 using 
 std::cout,
-std::cin,
 std::string,
 std::stack;
 
@@ -52,7 +51,6 @@ bool valid_parentheses(string s) {
 
 int main(void) {
 
-
     bool b = valid_parentheses("()[]{}");
     cout << std::boolalpha << b << "\n";
 
@@ -64,6 +62,7 @@ int main(void) {
 
     b = valid_parentheses("[)(]");
     cout << std::boolalpha << b << "\n";
+
 
     return 0;
 }

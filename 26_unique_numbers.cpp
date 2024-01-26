@@ -5,7 +5,6 @@
 
 using 
 std::cout,
-std::cin,
 std::vector;
 
 
@@ -56,13 +55,14 @@ int remove_duplicate_2(vector<int>& nums) {
 int main(void) {
 
     vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
-    int unique_nums = remove_duplicate_2(nums);
 
+    int unique_nums = remove_duplicate_2(nums);
     for(auto & elem : nums) {
         cout << elem << " ";
     }
     cout << "\n";
     cout << unique_nums;
+
 
     return 0;
 }

@@ -1,13 +1,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <cmath>
-#include <algorithm>
 
 
 using 
 std::cout,
-std::cin,
 std::string,
 std::vector;
 
@@ -76,6 +73,7 @@ int main(void) {
     for(auto & elem : digits) {
         cout << elem << "";
     }
+
 
     return 0;
 }

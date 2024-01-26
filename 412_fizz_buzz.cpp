@@ -5,7 +5,6 @@
 
 using 
 std::cout,
-std::cin,
 std::string,
 std::vector;
 
@@ -47,5 +46,6 @@ int main(void) {
         cout << elem << " ";
     }
 
+    
     return 0;
 }

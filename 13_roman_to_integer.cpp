@@ -4,7 +4,6 @@
 
 using 
 std::cout,
-std::cin,
 std::string;
 
 
@@ -48,9 +47,10 @@ int roman_to_int(string s) {
 int main(void) {
 
     string roman = "MCMXCIV";
+    
     int number = roman_to_int(roman);
-
     cout << number;
+
 
     return 0;
 }
