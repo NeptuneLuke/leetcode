@@ -125,31 +125,32 @@ vector<int> two_sum_3(vector<int> nums, int target) {
 
 int main(void) {
 
-    vector<int> nums = {3,2,4}; 
+    vector<int> nums = {2,3,4}; 
     int target = 6;
     
-    cout << "1 METHOD \n";
-    vector<int> result = two_sum_1(nums,target);
-    for(const auto &elem : result) {
-        cout << elem << "\n";
-    }
-    cout << "------------------------------- \n";
-    
 
-    cout << "2 METHOD \n";
-    vector<int> result2 = two_sum_2(nums,target);
-    for(const auto &elem : result2) {
+    vector<int> solution = two_sum_1(nums,target);
+    for(const auto &elem : solution) {
         cout << elem << "\n";
     }
-    cout << "------------------------------- \n";
-    
+    cout << "\n";
 
-    cout << "3 METHOD \n";
-    vector<int> result3 = two_sum_3(nums,target);
-    for(const auto &elem : result3) {
+
+    std::sort(nums.begin(), nums.end());
+    solution.clear();
+    solution = two_sum_2(nums,target);
+    for(const auto &elem : solution) {
         cout << elem << "\n";
     }
-    cout << "------------------------------- \n";
+    cout << "\n";
+
+
+    std::sort(nums.begin(), nums.end());
+    solution.clear();
+    solution = two_sum_3(nums,target);
+    for(const auto &elem : solution) {
+        cout << elem << "\n";
+    }
 
 
     return 0;
