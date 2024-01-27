@@ -51,10 +51,8 @@ vector<int> two_sum_1(vector<int> nums, int target) {
 // This way we can be sure that no two sum can be found after that index.
 // If the index of the target number is not found (the target itself it's not present
 // in the array) just do a normal two sum algorithm(target_index = nums.size()).
-// Only with >= 0 numbers.
+// Only with >= 0 numbers and sorted arrays.
 vector<int> two_sum_2(vector<int> nums, int target) {
-    
-    std::sort(nums.begin(),nums.end());
     
     int target_index = nums.size();
     auto it = std::find(nums.begin(), nums.end(), target);  
@@ -99,10 +97,8 @@ vector<int> two_sum_2(vector<int> nums, int target) {
 // If start+end == target then, {start,end} are the indexes.
 // If start+end > target -> end--
 // If start+end < target -> start++
-// Only with >= 0 numbers.
+// Only with >= 0 numbers and sorted arrays.
 vector<int> two_sum_3(vector<int> nums, int target) {
-    
-    std::sort(nums.begin(),nums.end());
     
     int target_index = nums.size();
     auto it = std::find(nums.begin(), nums.end(), target);  
