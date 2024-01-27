@@ -96,7 +96,7 @@ vector<int> two_sum_2(vector<int> nums, int target) {
 
 // Third method. The logic is similar to the second, but 
 // the algorithm uses two indexes (start and end)
-// If start+end == target then, {start,end} are the indexex.
+// If start+end == target then, {start,end} are the indexes.
 // If start+end > target -> end--
 // If start+end < target -> start++
 // Only with >= 0 numbers.
