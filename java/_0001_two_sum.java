@@ -1,13 +1,14 @@
+// https://leetcode.com/problems/two-sum/description/
+
 import java.util.ArrayList;
 
 public class _0001_two_sum {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> nums = new ArrayList<Integer>();
-        nums.add(2);
-        nums.add(3);
-        nums.add(4);
+        ArrayList<Integer> nums = new ArrayList<Integer>() { 
+            { add(2); add(3); add(4); } 
+        };
         int target = 6;
         
 
@@ -31,7 +32,7 @@ public class _0001_two_sum {
     }
 
 
-    /* First method.
+    /* Solution 1.
      * Nothing too smart. Just set sol = to the first number of the array.
      * Then search trough the array (starting from the second number) 
      * and tries to check if is the right match for the first one. 
