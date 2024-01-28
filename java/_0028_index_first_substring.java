@@ -1,7 +1,5 @@
 // https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 
-import java.util.ArrayList;
-
 public class _0028_index_first_substring {
 
     public static void main(String[] args) {
