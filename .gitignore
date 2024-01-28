@@ -1,0 +1,14 @@
+# C++
+.vscode/
+*.o
+*.exe
+
+# Java
+.settings/
+bin/
+tmp/
+.metadata
+.classpath
+.project
+*.jar
+*.class
