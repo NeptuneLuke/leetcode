@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/two-sum/description/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -8,7 +10,7 @@ std::cout,
 std::vector;
 
 
-/* First method.
+/* Solution 1.
  * Nothing too smart. Just set sol = to the first number of the array. 
  * Then search trough the array (starting from the second number) 
  * and tries to check if is the right match for the first one. 
@@ -128,20 +130,17 @@ int main(void) {
     vector<int> nums = {2,3,4};
     int target = 6;
     
-
     vector<int> solution = two_sum_1(nums,target);
     for(const auto &elem : solution) {
         cout << elem << "\n";
     }
     cout << "\n";
 
-
     solution = two_sum_2(nums,target);
     for(const auto &elem : solution) {
         cout << elem << "\n";
     }
     cout << "\n";
-
 
     solution = two_sum_3(nums,target);
     for(const auto &elem : solution) {

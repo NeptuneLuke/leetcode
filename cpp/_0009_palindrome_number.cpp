@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/palindrome-number/description
+
 #include <iostream>
 #include <vector>
 
@@ -7,7 +9,7 @@ std::cout,
 std::vector;
 
 
-/* First method. 
+/* Solution 1. 
  * An array is filled with the reversed number and then every 
  * complementary indexes of the array are checked.
  */
